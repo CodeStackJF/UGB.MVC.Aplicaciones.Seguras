@@ -1,0 +1,19 @@
+paquetes necesarios
+dotnet add package FluentValidation --version 12.1.1
+dotnet add package FluentValidation.DependencyInjectionExtensions --version 12.1.1
+¡Importante!, FluentValidation y FluentValidation.DependencyInjectionExtensions deben ser la misma versión entre ambas.
+
+el directorio DTO almacena los DTOs para cada entidad.
+Existe el directorio UsersDTO que almacena:
+- CreateUserDTO: para crear un nuevo usuario
+- UpdateUserDTO: para actualizar un usuario
+- UpdateUserPasswordDTO: para actualizar credenciales
+- UserDTO: obtener los datos de un usuario
+
+directorio Entities almacena las representaciones de las tablas de la base de datos.
+De momento no hay conexión a una base de datos pero servirán más adelante para esto.
+
+Mapper almacena una clase personalizada para mapear clases entre distintos tipos.
+
+Validations almacena las configuraciones de validación de FluentValidation para cada DTO que permite crear o actualizar entidades.
+El archivo ValidationInjection permite realizar la inyección de dependencias en la ejecución de la aplicación.
