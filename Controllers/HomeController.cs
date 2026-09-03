@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using UGB.MVC.Helper;
+using UGB.MVC.Interfaces;
 
 namespace UGB.MVC.Controllers;
 
-public class HomeController : Controller
+public class HomeController() : Controller
 {
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
         return View();
     }

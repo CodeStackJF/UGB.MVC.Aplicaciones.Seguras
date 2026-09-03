@@ -1,4 +1,7 @@
+using UGB.MVC.Helper;
+using UGB.MVC.Interfaces;
 using UGB.MVC.Validations.UsersValidation;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,9 @@ builder.Services.AddControllersWithViews();
 
 //agregamos la inyección de dependencias del validador de CreateUserDTO
 builder.Services.AddValidationInjection();
+
+builder.Services.AddSingleton<IConfigureOptions<SettingsBase>, MailSettings>();
+builder.Services.AddSingleton<IEmailService, EmailService>();
 
 var app = builder.Build();
 

@@ -17,3 +17,14 @@ Mapper almacena una clase personalizada para mapear clases entre distintos tipos
 
 Validations almacena las configuraciones de validación de FluentValidation para cada DTO que permite crear o actualizar entidades.
 El archivo ValidationInjection permite realizar la inyección de dependencias en la ejecución de la aplicación.
+
+Patrones
+Patron DTO
+Patrón Validacion
+Patrón Repositorio
+Hashing de contraseñas
+Middleware de Seguridad
+Control de acceso
+Patrón de Autenticación
+Patrón de Capas
+Patrón seguro por defecto
