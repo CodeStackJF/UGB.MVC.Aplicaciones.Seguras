@@ -16,6 +16,8 @@ builder.Services.AddControllersWithViews();
 
 //agregamos la inyección de dependencias del validador de CreateUserDTO
 builder.Services.AddValidationInjection();
+
+//inyectamos los repositorios de base de datos
 builder.Services.AddRepositoryInjection();
 
 //inyección de servicio de correo
