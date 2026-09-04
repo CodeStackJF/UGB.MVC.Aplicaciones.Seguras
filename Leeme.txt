@@ -1,9 +1,16 @@
-paquetes necesarios
+PAQUETES NECESARIOS
 dotnet add package FluentValidation --version 12.1.1
 dotnet add package FluentValidation.DependencyInjectionExtensions --version 12.1.1
 ¡Importante!, FluentValidation y FluentValidation.DependencyInjectionExtensions deben ser la misma versión entre ambas.
 
-el directorio DTO almacena los DTOs para cada entidad
+Tambien deben instalar MailKit si quieren hacer uso del envio de correos con la clase de ayuda en la carpeta Helper
+dotnet add package MailKit --version 4.17.0
+
+*en controllers existe el controlador PublicEndpointController que ha sido configurado como endpoint de una api, este tiene aplicada una politica de acceso
+
+*el directorio DatabaseConfiguration almacena configuraciones individuales y avanzadas para cada entidad
+
+*el directorio DTO almacena los DTOs para cada entidad
 DATA TRANSFER OBJECT
 Existe el directorio UsersDTO que almacena:
 - CreateUserDTO: para crear un nuevo usuario
@@ -11,12 +18,20 @@ Existe el directorio UsersDTO que almacena:
 - UpdateUserPasswordDTO: para actualizar credenciales
 - UserDTO: obtener los datos de un usuario
 
-directorio Entities almacena las representaciones de las tablas de la base de datos.
-De momento no hay conexión a una base de datos pero servirán más adelante para esto.
+*directorio Entities almacena las representaciones de las tablas de la base de datos.
 
-Mapper almacena una clase personalizada para mapear clases entre distintos tipos.
+*en Helper se almacena clases de ayuda y extensiones de clase
 
-Validations almacena las configuraciones de validación de FluentValidation para cada DTO que permite crear o actualizar entidades.
+*en interfaces se almacenan las interfaces de acceso a la base de datos
+
+*Mapper almacena una clase personalizada para mapear clases entre distintos tipos.
+
+*la carpeta Policies almacena la politica de acceso para el controlador PublicEndpointController
+dentro, hay dos capturas demostrando la funcionalidad de cuando se envia o no el token de la api
+
+*la carpeta Repositories almacena los repositorios para comunicarse con la base de datos, estos implementan las interfaces creadas
+
+*Validations almacena las configuraciones de validación de FluentValidation para cada DTO que permite crear o actualizar entidades.
 El archivo ValidationInjection permite realizar la inyección de dependencias en la ejecución de la aplicación.
 
 BASE DE DATOS
