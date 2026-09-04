@@ -4,13 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using UGB.MVC.Aplicaciones.Seguras.Entities;
+using UGB.MVC.Aplicaciones.Seguras.Helper;
+using UGB.MVC.Aplicaciones.Seguras.Interfaces;
 using UGB.MVC.DTO.UsersDTO;
 using UGB.MVC.Entities;
 using UGB.MVC.Mapper;
 namespace UGB.MVC.Controllers
 {
     //realizamos la inyección de dependencias del validador de CreateUserDTO
-    public class UsersController(IValidator<CreateUserDTO> createUserDTOValidator) : Controller
+    public class UsersController(
+                IValidator<CreateUserDTO> createUserDTOValidator,
+                IUsersRepository usersRepository
+            ) : Controller
     {
         public IActionResult Index()
         {
@@ -64,7 +71,7 @@ namespace UGB.MVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create([FromBody] CreateUserDTO createUserDTO)
+        public async Task<ActionResult> Create([FromBody] CreateUserDTO createUserDTO)
         {
             //validamos el objeto que recibimos en el body de la petición
             var validation = createUserDTOValidator.Validate(createUserDTO);
@@ -75,9 +82,27 @@ namespace UGB.MVC.Controllers
                 return BadRequest(validation.Errors);
             }
 
+            if(await usersRepository.EmailExists(createUserDTO.email))
+            {
+                return BadRequest("Este correo ya se encuentra registrado.");
+            }
+
+            HashedPassword hashedPassword = HashHelper.Hash(createUserDTO.password);
+
             //mapeamos el objeto CreateUserDTO a la entidad users para poder guardarlo en la base de datos
             users user = CustomMapper<users>.Map(createUserDTO);
-            return Ok(user);
+
+            user.password = hashedPassword.Password;
+            user.salt = hashedPassword.Salt;
+            user = await usersRepository.Insert(user);
+            return Ok(CustomMapper<UserDTO>.Map(user));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> List()
+        {
+            var users = await usersRepository.GetAll();
+            return Ok(CustomMapper<UserDTO>.Map(users));
         }
     }
 }

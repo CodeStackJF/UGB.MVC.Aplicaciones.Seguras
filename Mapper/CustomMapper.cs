@@ -36,7 +36,8 @@ namespace UGB.MVC.Mapper
                 {
                     first_name = inputType.firstName,
                     last_name = inputType.lastName,
-                    email = inputType.email
+                    email = inputType.email,
+                    password = inputType.password,
                 } as TOutput)!;
             }
 
@@ -51,6 +52,17 @@ namespace UGB.MVC.Mapper
                 IEnumerable<users> inputType = (input as IEnumerable<users>)!;
                 //hace uso de la función que mapea un solo objeto para mapear cada objeto de la lista, esto se hace con el método Select de LINQ
                 return input.Select(Map);
+            }
+            throw new NotSupportedException();
+        }
+
+        public static List<TOutput> Map<TInput>(List<TInput> input)
+        {
+            if(typeof(TInput) == typeof(users) && typeof(TOutput) == typeof(UserDTO))
+            {
+                IEnumerable<users> inputType = (input as IEnumerable<users>)!;
+                //hace uso de la función que mapea un solo objeto para mapear cada objeto de la lista, esto se hace con el método Select de LINQ
+                return input.Select(Map).ToList();
             }
             throw new NotSupportedException();
         }

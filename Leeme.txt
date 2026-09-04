@@ -3,7 +3,8 @@ dotnet add package FluentValidation --version 12.1.1
 dotnet add package FluentValidation.DependencyInjectionExtensions --version 12.1.1
 ¡Importante!, FluentValidation y FluentValidation.DependencyInjectionExtensions deben ser la misma versión entre ambas.
 
-el directorio DTO almacena los DTOs para cada entidad.
+el directorio DTO almacena los DTOs para cada entidad
+DATA TRANSFER OBJECT
 Existe el directorio UsersDTO que almacena:
 - CreateUserDTO: para crear un nuevo usuario
 - UpdateUserDTO: para actualizar un usuario
