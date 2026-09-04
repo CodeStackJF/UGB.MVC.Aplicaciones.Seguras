@@ -43,13 +43,15 @@ PARA CREAR LA BASE DE DATOS SE EJECUTA
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-Patrones
+TAMBIÉN PUEDEN CREARLA MANUALMENTE USANDO DB BROWSER FOR SQLITE
+
+Patrones aplicados
 Patron DTO
 Patrón Validacion
 Patrón Repositorio
 Hashing de contraseñas
-Middleware de Seguridad
+Middleware/Politica de Seguridad
 Control de acceso
 Patrón de Autenticación
-Patrón de Capas
 Patrón seguro por defecto
+Patrón de Capas (parcialmente si consideramos como están estructurados los directorios)
