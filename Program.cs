@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using UGB.MVC.Aplicaciones.Seguras.Entities;
 using Microsoft.EntityFrameworkCore;
 using UGB.MVC.Aplicaciones.Seguras.Repositories;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,21 @@ builder.Services.AddSingleton<IEmailService, EmailService>();
 
 builder.Services.AddDbContext<StoreCTX>(options =>
     options.UseSqlite("Data Source=store.db"));
+
+builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(options =>
+            {
+                options.LoginPath = "/Login";
+                options.Events.OnRedirectToAccessDenied = context =>
+                {
+                    context.Response.Redirect("/Login");
+                    return Task.CompletedTask;
+                };
+            });
 
 var app = builder.Build();
 

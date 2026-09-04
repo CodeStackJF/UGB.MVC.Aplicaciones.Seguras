@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UGB.MVC.Aplicaciones.Seguras.DTO.RolesDTO;
+using UGB.MVC.Aplicaciones.Seguras.DTO.RolesUsersDTO;
+using UGB.MVC.Aplicaciones.Seguras.Entities;
 using UGB.MVC.DTO.UsersDTO;
 using UGB.MVC.Entities;
 
@@ -26,6 +29,7 @@ namespace UGB.MVC.Mapper
                     firstName = inputType.first_name,
                     lastName = inputType.last_name,
                     email = inputType.email,
+                    roles = inputType.users_roles.Select(x=>CustomMapper<RolesUsersDTO>.Map(x)),
                 } as TOutput)!;
             }
 
@@ -41,6 +45,25 @@ namespace UGB.MVC.Mapper
                 } as TOutput)!;
             }
 
+            if(typeof(TInput) == typeof(roles) && typeof(TOutput) == typeof(RoleDTO))
+            {
+                roles inputType = (input as roles)!;
+                return (new RoleDTO()
+                {
+                    id = inputType.id,
+                    description = inputType.description,
+                } as TOutput)!;
+            }
+
+            if(typeof(TInput) == typeof(users_roles) && typeof(TOutput) == typeof(RolesUsersDTO))
+            {
+                users_roles inputType = (input as users_roles)!;
+                return (new RolesUsersDTO()
+                {
+                    role = CustomMapper<RoleDTO>.Map(inputType.role),
+                } as TOutput)!;
+            }
+
             throw new NotSupportedException();
         }
 
@@ -53,6 +76,14 @@ namespace UGB.MVC.Mapper
                 //hace uso de la función que mapea un solo objeto para mapear cada objeto de la lista, esto se hace con el método Select de LINQ
                 return input.Select(Map);
             }
+
+            if(typeof(TInput) == typeof(users_roles) && typeof(TOutput) == typeof(RolesUsersDTO))
+            {
+                IEnumerable<users_roles> inputType = (input as IEnumerable<users_roles>)!;
+                //hace uso de la función que mapea un solo objeto para mapear cada objeto de la lista, esto se hace con el método Select de LINQ
+                return input.Select(Map);
+            }
+
             throw new NotSupportedException();
         }
 

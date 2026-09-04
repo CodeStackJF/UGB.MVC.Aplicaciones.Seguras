@@ -19,6 +19,15 @@ Mapper almacena una clase personalizada para mapear clases entre distintos tipos
 Validations almacena las configuraciones de validación de FluentValidation para cada DTO que permite crear o actualizar entidades.
 El archivo ValidationInjection permite realizar la inyección de dependencias en la ejecución de la aplicación.
 
+BASE DE DATOS
+Se deben instalar los siguientes paqueres para sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+PARA CREAR LA BASE DE DATOS SE EJECUTA
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
 Patrones
 Patron DTO
 Patrón Validacion

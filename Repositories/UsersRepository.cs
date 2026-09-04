@@ -31,21 +31,22 @@ namespace UGB.MVC.Aplicaciones.Seguras.Repositories
 
         public async Task<users> Get(int id)
         {
-            return await ctx.users.FindAsync(id);
+            return (await ctx.users.Include(x=>x.users_roles).ThenInclude(x=>x.role).Where(x=>x.id == id).FirstOrDefaultAsync())!;
         }
 
         public async Task<IEnumerable<users>> GetAll()
         {
-            return await ctx.users.ToListAsync();
+            return await ctx.users.Include(x=>x.users_roles).ThenInclude(x=>x.role).ToListAsync();
         }
 
         public async Task<users> GetByEmail(string email)
         {
-            return await ctx.users.Where(x=>x.email == email).FirstOrDefaultAsync();
+            return (await ctx.users.Include(x=>x.users_roles).ThenInclude(x=>x.role).Where(x=>x.email == email).FirstOrDefaultAsync())!;
         }
 
         public async Task<users> Insert(users user)
         {
+            user.users_roles = null!;
             ctx.users.Add(user);
             await ctx.SaveChangesAsync();
             return user;
@@ -53,14 +54,14 @@ namespace UGB.MVC.Aplicaciones.Seguras.Repositories
 
         public async Task<bool> Update(int id, users user)
         {
-            users _user = await ctx.users.FindAsync(id);
+            users _user = (await ctx.users.FindAsync(id))!;
             _user.first_name = user.first_name;
             return await ctx.SaveChangesAsync() > 0;
         }
 
         public async Task<bool> UpdatePassword(int id, string password, string salt)
         {
-             users _user = await ctx.users.FindAsync(id);
+             users _user = (await ctx.users.FindAsync(id))!;
              _user.password = password;
              _user.salt = salt;
              return await ctx.SaveChangesAsync() > 0;

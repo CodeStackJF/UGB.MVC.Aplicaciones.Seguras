@@ -1,0 +1,27 @@
+@using UGB.MVC.Entities
+<div class="row">
+    <div class="col-md-12">
+        <h1>Solo el administrador puede ver esta página</h1>
+       <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(users user in ViewBag.Users)
+                {
+                    <tr>
+                        <td>@user.id</td>
+                        <td>@user.first_name</td>
+                        <td>@user.last_name</td>
+                        <td>@user.email</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
