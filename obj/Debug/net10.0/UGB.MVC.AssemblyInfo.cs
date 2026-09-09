@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UGB.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eff4ee77a8973ba3cae860cc08461a9641a2c01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+088c4ddf507fb14467783743ef7fba8dfd931ea1")]
 [assembly: System.Reflection.AssemblyProductAttribute("UGB.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UGB.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

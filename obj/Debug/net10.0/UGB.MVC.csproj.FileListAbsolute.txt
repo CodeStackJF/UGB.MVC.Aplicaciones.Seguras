@@ -423,7 +423,6 @@ D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicacione
 D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\compressed\cu8e40mxs1-{0}-h0ixw0yu5l-h0ixw0yu5l.gz
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\appsettings.Development.json
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\appsettings.json
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\UGB.MVC.staticwebassets.runtime.json
@@ -644,3 +643,13 @@ D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\UGB.MV
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\UGB.MVC.genruntimeconfig.cache
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\ref\UGB.MVC.dll
 D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\compressed\cu8e40mxs1-{0}-se96hcyxjo-se96hcyxjo.gz
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\obj\Debug\net10.0\compressed\cu8e40mxs1-{0}-se96hcyxjo-se96hcyxjo.gz
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll

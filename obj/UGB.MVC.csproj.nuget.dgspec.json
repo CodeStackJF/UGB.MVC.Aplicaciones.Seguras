@@ -1,28 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\AplicacionesSeguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj": {}
+    "D:\\josej\\Documents\\Proyectos\\Desarrollo Aplicaciones Seguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\AplicacionesSeguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj": {
+    "D:\\josej\\Documents\\Proyectos\\Desarrollo Aplicaciones Seguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\AplicacionesSeguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj",
+        "projectUniqueName": "D:\\josej\\Documents\\Proyectos\\Desarrollo Aplicaciones Seguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj",
         "projectName": "UGB.MVC",
-        "projectPath": "D:\\GIT\\AplicacionesSeguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\AplicacionesSeguras\\UGB.MVC.Aplicaciones.Seguras\\obj\\",
+        "projectPath": "D:\\josej\\Documents\\Proyectos\\Desarrollo Aplicaciones Seguras\\UGB.MVC.Aplicaciones.Seguras\\UGB.MVC.csproj",
+        "packagesPath": "C:\\Users\\josej\\.nuget\\packages\\",
+        "outputPath": "D:\\josej\\Documents\\Proyectos\\Desarrollo Aplicaciones Seguras\\UGB.MVC.Aplicaciones.Seguras\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\DevExpress23\\Components\\Offline Packages",
-          "D:\\Program Files\\DevExpress\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Users\\josej\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +27,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "D:\\Program Files\\DevExpress23\\Components\\System\\Components\\Packages": {},
-          "D:\\Program Files\\DevExpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,6 +63,14 @@
               "target": "Package",
               "version": "[4.17.0, )"
             },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.3.13, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.111/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

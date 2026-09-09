@@ -18,6 +18,8 @@ namespace UGB.MVC.Controllers
     //Globalmente, todos los métodos de este controlador requieren autenticación para acceder a sus acciones
     //Solo en los métodos que se requiera un rol específico se puede agregar el atributo [Authorize(Roles = "Rol")]
     [Authorize]
+    [ApiController]
+    [Route("[controller]")]
     //realizamos la inyección de dependencias del validador de CreateUserDTO
     public class UsersController(
                 IValidator<CreateUserDTO> createUserDTOValidator,
@@ -25,11 +27,6 @@ namespace UGB.MVC.Controllers
                 IUsersRolesRepository usersRolesRepository
             ) : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] CreateUserDTO createUserDTO)
         {

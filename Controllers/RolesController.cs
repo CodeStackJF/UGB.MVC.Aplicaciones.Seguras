@@ -11,17 +11,13 @@ namespace UGB.MVC.Aplicaciones.Seguras.Controllers
 {
     //Globalmente, todos los métodos de este controlador requieren autenticación como administrador para acceder a sus acciones
     [Authorize(Roles = "Administrator")]
+    [ApiController]
+    [Route("[controller]")]
     public class RolesController(IRolesRepository rolesRepository) : Controller
     {        
-        public async Task<IActionResult> Index( )
+      public async Task<IActionResult> Index( )
         {
             return Ok(await rolesRepository.GetAll());
-        }
-
-        public async Task<IActionResult> List()
-        {
-            IEnumerable<RoleDTO> roles = CustomMapper<RoleDTO>.Map(await rolesRepository.GetAll());
-            return Ok(roles);
-        }
+        } 
     }
 }

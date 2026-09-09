@@ -19,49 +19,49 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = UGB.MVC
 build_property.RootNamespace = UGB.MVC
-build_property.ProjectDir = D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras\
+build_property.ProjectDir = D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GIT\AplicacionesSeguras\UGB.MVC.Aplicaciones.Seguras
+build_property.MSBuildProjectDirectory = D:\josej\Documents\Proyectos\Desarrollo Aplicaciones Seguras\UGB.MVC.Aplicaciones.Seguras
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Home/Index.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Login/Index.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/index.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/ListAll.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/ListAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTGlzdEFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/ShowAuthenticated.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Users/ShowAuthenticated.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2hvd0F1dGhlbnRpY2F0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/_ViewImports.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/_ViewStart.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GIT/AplicacionesSeguras/UGB.MVC.Aplicaciones.Seguras/Views/Shared/_Layout.cshtml]
+[D:/josej/Documents/Proyectos/Desarrollo Aplicaciones Seguras/UGB.MVC.Aplicaciones.Seguras/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0zf5703opx
